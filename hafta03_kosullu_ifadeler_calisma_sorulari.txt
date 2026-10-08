@@ -1,0 +1,171 @@
+🟢 SEVİYE 1: TEMEL if ve if-else YAPILARI (Sorular 1-3)
+Soru 1: Pozitif Sayı Kontrolü
+Senaryo: Kullanıcıdan bir tam sayı girmesini isteyin. Eğer sayı 0'dan büyükse "Bu sayı pozitiftir." yazdırın. Sayı negatif veya sıfırsa hiçbir şey yazdırmadan program sonlansın.
+Girdi Örneği: 15
+Beklenen Çıktı: Bu sayı pozitiftir.
+Detaylı İpuçları:
+Console.ReadLine() her zaman metin (string) okur. Bunu tam sayıya çevirmek için int.Parse() kullanmayı unutmayın.
+Bu soruda sadece if bloğu yeterlidir, else kullanmanıza gerek yoktur.
+Soru 2: Çift mi, Tek mi?
+Senaryo: Kullanıcıdan bir tam sayı alın. Sayının 2'ye bölümünden kalan (% operatörü) 0 ise "Çift sayı", değilse "Tek sayı" yazdırın.
+Girdi Örneği: 7
+Beklenen Çıktı: Tek sayı
+Detaylı İpuçları:
+Kalan operatörü %'dir. Örneğin sayi % 2 == 0 ifadesi "sayının 2'ye bölümünden kalan 0'a eşit mi?" demektir.
+İki durumu da kapsadığı için if-else yapısını kullanmalısınız.
+Soru 3: Basit Şifre Doğrulama
+Senaryo: Kullanıcıdan bir şifre girmesini isteyin. Girilen şifre "12345" metnine tam olarak eşitse "Giriş Başarılı", değilse "Hatalı Şifre" yazdırın.
+Girdi Örneği: 12345
+Beklenen Çıktı: Giriş Başarılı
+Detaylı İpuçları:
+Şifre metinsel bir veri olacağı için değişken tipinizi string olarak tanımlayın.
+String'lerde eşitlik kontrolü için == operatörünü kullanırız (Tek = atama yapar, == karşılaştırır, bu en yaygın başlangıç hatalarından biridir).
+🟡 SEVİYE 2: if-else if ZİNCİRİ ve ARALIK KONTROLÜ (Sorular 4-5)
+Soru 4: Sayının İşareti (3 Durumlu)
+Senaryo: Kullanıcıdan bir sayı alın. Sayı 0'dan büyükse "Pozitif", 0'a eşitse "Sıfır", 0'dan küçükse "Negatif" yazdırın.
+Girdi Örneği: 0
+Beklenen Çıktı: Sıfır
+Detaylı İpuçları:
+Üç farklı durum olduğu için if, ardından else if ve en sonda else bloğunu kullanmalısınız.
+Koşullar yukarıdan aşağıya sırayla kontrol edilir, ilk doğru olan çalışır ve diğerleri atlanır.
+Soru 5: Basit Not Sistemi
+Senaryo: 100'lük sistemde girilen notu 5'lik sisteme çevirin:
+0 - 49 arası: "FF (Kaldı)"
+50 - 84 arası: "CC (Geçer)"
+85 - 100 arası: "AA (Pekiyi)"
+Diğer tüm durumlar için: "Geçersiz not girdiniz."
+Girdi Örneği: 90
+Beklenen Çıktı: AA (Pekiyi)
+Detaylı İpuçları:
+if (not >= 85 && not <= 100) gibi mantıksal VE (&&) operatörüyle aralık kontrolü yapabilirsiniz.
+Veya daha pratik olarak: Sırayla if (not >= 85), else if (not >= 50) şeklinde yazarsanız, program zaten 85'ten büyük olanları yukarıda yakaladığı için alttaki blokta otomatik olarak 84 ve altı demektir.
+🟠 SEVİYE 3: MANTIKSAL OPERATÖRLER (&&, ||, !) (Sorular 6-8)
+Soru 6: Lunapark Kontrolü (VE Operatörü)
+Senaryo: Bir lunapark trenine binmek için kullanıcının yaşının 12'den büyük VE boyunun 140 cm'den uzun olması gerekir. Her iki koşul da sağlanıyorsa "Binemezsiniz", değilse "Binebilirsiniz" yazdırın. (Değişkenleri siz sorun).
+Girdi Örneği: Yaş: 15, Boy: 135
+Beklenen Çıktı: Binebilirsiniz (Çünkü boy koşulu sağlanmadı)
+Detaylı İpuçları:
+İki koşulun aynı anda doğru olması gerektiği için && (VE) operatörünü kullanın.
+if (yas > 12 && boy > 140)
+Soru 7: Müze İndirimi (VEYA Operatörü)
+Senaryo: Kullanıcıdan yaşını ve "Öğrenci misiniz? (e/h)" bilgisini alın. Eğer yaş 65'den büyükse VEYA öğrenci ise 'e' cevabı verdiyse "İndirimli bilet hakkınız var", aksi halde "Tam bilet" yazdırın.
+Girdi Örneği: Yaş: 25, Öğrenci: e
+Beklenen Çıktı: İndirimli bilet hakkınız var
+Detaylı İpuçları:
+Koşullardan sadece birinin doğru olması yeterlidir, bu yüzden || (VEYA) operatörünü kullanın.
+Karakter karşılaştırması için tek tırnak kullanmayı unutmayın: ogrenci == 'e'.
+Soru 8: Piknik Kararı (DEĞİL Operatörü)
+Senaryo: Kullanıcıya "Hava yağmurlu mu? (e/h)" diye sorun. Eğer hava yağmurlu değilse "Pikniğe gidebiliriz", yağmurluysa "Piknik iptal" yazdırın.
+Girdi Örneği: h
+Beklenen Çıktı: Pikniğe gidebiliriz
+Detaylı İpuçları:
+Bir eşitliğin tersini almak için != (eşit değildir) operatörünü kullanabilirsiniz: havaDurumu != 'e'.
+Alternatif olarak mantıksal DEĞİL operatörü ! ile de yapabilirsiniz: !(havaDurumu == 'e').
+🔴 SEVİYE 4: İÇ İÇE (NESTED) if YAPILARI (Sorular 9-10)
+Soru 9: İki Aşamalı Giriş (Kart ve Şifre)
+Senaryo: Önce kullanıcıdan "Kart Numarası"nı isteyin (Doğrusu: "1111"). Eğer doğruysa, bu sefer "Şifre" isteyin (Doğrusu: "2222"). Şifre de doğruysa "Giriş Başarılı", değilse "Hatalı Şifre" yazın. Kart numarası baştan yanlışsa "Geçersiz Kart" yazın ve şifre sormayın.
+Girdi Örneği: Kart: 1111, Şifre: 9999
+Beklenen Çıktı: Hatalı Şifre
+Detaylı İpuçları:
+İlk if bloğunun içine ikinci bir if-else bloğu açmalısınız.
+Bu yapı, gereksiz yere şifre sormayı engeller (Güvenlik ve mantık açısından önemlidir).
+Soru 10: Askerlik Durumu Sorgulama
+Senaryo: Kullanıcıdan cinsiyetini ("E" veya "K") ve yaşını sorun.
+Eğer cinsiyet "K" ise doğrudan "Askerlik hizmeti kadınlar için isteğe bağlıdır." yazın.
+Eğer cinsiyet "E" ise, bu sefer yaşa bakın: Yaş 20'den büyükse "Askere gitme zamanınız gelmiş olabilir.", değilse "Yaşınız henüz küçük." yazın.
+Girdi Örneği: Cinsiyet: E, Yaş: 19
+Beklenen Çıktı: Yaşınız henüz küçük.
+Detaylı İpuçları:
+Dıştaki if cinsiyeti kontrol eder. "E" durumunda olan if bloğunun içine, yaşı kontrol eden yeni bir if-else yerleştirin.
+🟣 SEVİYE 5: switch YAPISI ve TÜREVLERİ (Sorular 11-14)
+Soru 11: Temel Mevsim Seçimi
+Senaryo: Kullanıcıdan 1 ile 4 arasında bir sayı isteyin. 1: İlkbahar, 2: Yaz, 3: Sonbahar, 4: Kış yazdırın.
+Girdi Örneği: 3
+Beklenen Çıktı: Sonbahar
+Detaylı İpuçları:
+Çoklu eşitlik kontrollerinde if-else if yerine switch daha okunaklıdır.
+Her case sonuna break; koymayı unutmayın, yoksa program bir sonraki case'e de girer (buna "fall-through" denir).
+Soru 12: Renk Kodları ve default
+Senaryo: Kullanıcıdan bir harf girmesini isteyin: 'K' -> Kırmızı, 'S' -> Sarı, 'M' -> Mor. Eğer bu harflerden biri girilmezse default bloğu devreye girsin ve "Bilinmeyen renk kodu" yazsın.
+Girdi Örneği: X
+Beklenen Çıktı: Bilinmeyen renk kodu
+Detaylı İpuçları:
+switch yapısında kullanıcının girebileceği tüm geçerli seçenekleri tahmin edemeyiz. Bu yüzden beklenmedik durumları yakalamak için default: bloğu güvenlik ağı olarak mutlaka kullanılmalıdır.
+Soru 13: Hafta İçi / Hafta Sonu (Çoklu Case)
+Senaryo: Girilen gün numarasına (1-7) göre "Hafta İçi" veya "Hafta Sonu" yazdırın. (1,2,3,4,5 -> Hafta İçi; 6,7 -> Hafta Sonu).
+Girdi Örneği: 6
+Beklenen Çıktı: Hafta Sonu
+Detaylı İpuçları:
+Birden fazla case'in aynı sonucu vermesi istendiğinde, aralarına kod yazmadan alt alta dizilir ve sadece en sonuncusuna break; konur. (Ders notlarınızdaki Örnek 7'ye benzer).
+Soru 14: Basit Hesap Makinesi
+Senaryo: Kullanıcıdan iki sayı ve bir işlem operatörü (+, -, *, /) isteyin. switch kullanarak seçilen işlemi yapın ve sonucu yazdırın.
+Girdi Örneği: Sayı1: 10, Sayı2: 2, İşlem: /
+Beklenen Çıktı: Sonuç: 5
+Detaylı İpuçları:
+switch ifadesi bir char (veya string) değişkeni üzerinde çalışabilir: switch (islem).
+Kritik İpucu: Bölme (/) işleminde case bloğunun içine küçük bir if ekleyerek "Eğer bölen (2. sayı) 0 ise 'Sıfıra bölme hatası!' yazdır" kontrolü yapmayı deneyin.
+⚫ SEVİYE 6: KARMA YAPILAR (if içinde switch, switch içinde if) (Sorular 15-18)
+Soru 15: If İçinde Switch (Kargo Ağırlık ve Firma)
+Senaryo: Kullanıcıdan paket ağırlığını sorun.
+Eğer ağırlık 5 kg'dan fazlaysa, kullanıcıya "Firma seçin (1: A Firması, 2: B Firması)" diye sorun ve switch ile seçilen firmayı yazdırın.
+Ağırlık 5 kg veya altındaysa direkt "Standart kargo ile gönderilecektir." yazın, firma sormayın.
+Girdi Örneği: Ağırlık: 3
+Beklenen Çıktı: Standart kargo ile gönderilecektir.
+Detaylı İpuçları:
+Mantık akışı şöyledir: Önce dışarıda bir if-else ile ağırlık kontrolü yapın. if bloğunun içine (ağırlık > 5 olan yere) switch yapısını yerleştirin.
+Soru 16: Switch İçinde If (Sınav Hesaplama Menüsü)
+Senaryo: Bir menü sunun: "1: Not Hesapla, 2: Sadece Vizeyi Göster".
+Kullanıcı 1'i seçerse, vize ve final notunu isteyin. Ortalama 50'den büyükse "Geçti", değilse "Kaldı" yazın (switch içinde if).
+Kullanıcı 2'yi seçerse sadece vize notunu isteyin ve ekrana yazdırın.
+Girdi Örneği: Menü: 1, Vize: 40, Final: 60
+Beklenen Çıktı: Geçti
+Detaylı İpuçları:
+switch yapısının case 1: bloğunun içine, ortalama hesaplayan ve if-else ile geçme durumunu kontrol eden kodları yazmalısınız.
+Soru 17: Otopark Ücreti (Switch sonrası If)
+Senaryo: Araç tipi (1: Otomobil, 2: Motosiklet) ve kalınan saat (tam sayı) bilgilerini alın.
+Önce switch ile araç tipine göre saatlik ücreti belirleyin (Otomobil: 50 TL, Motosiklet: 30 TL).
+Daha sonra if ile saati kontrol edin: Eğer süre 3 saatten fazlaysa, toplam ücret maksimum 150 TL olarak sabitlenir (Kampanya). Değilse saat * saatlik_ucret hesaplanır.
+Girdi Örneği: Araç: 1, Saat: 4
+Beklenen Çıktı: Toplam Ücret: 150 TL (Normalde 200 TL olmalıydı ama kampanya girdi)
+Detaylı İpuçları:
+Önce switch ile baz ücreti bir değişkene atayın. Ardından switch bloğundan çıktıktan sonra if ile kampanya kontrolü yapıp değişkeni güncelleyin.
+Soru 18: Rol ve Yaş Kontrolü (If içinde If veya Switch içinde If)
+Senaryo: Kullanıcıdan "Rol (1: Admin, 2: Üye)" ve "Yaş" bilgilerini alın.
+Eğer rol Admin ise: "Tüm yetkilere sahipsiniz." yazın.
+Eğer rol Üye ise: Yaşı kontrol edin. Yaş 18'den büyükse "İçeriğe erişim sağlandı", değilse "Erişim reddedildi (Yaş sınırı)" yazın.
+Girdi Örneği: Rol: 2, Yaş: 16
+Beklenen Çıktı: Erişim reddedildi (Yaş sınırı)
+Detaylı İpuçları:
+Bunu iki şekilde çözebilirsiniz: Ya dışarıda if (rol == 2) yapıp içine yaş if'i koyarsınız, ya da switch (rol) yapıp case 2: bloğunun içine yaş if'i koyarsınız. İkisi de doğrudur, birini deneyin.
+🏆 SEVİYE 7: İLERİ SEVİYE GERÇEK HAYAT SENARYOLARI (Sorular 19-20)
+Soru 19: E-Ticaret Sepet İndirim Sistemi
+Senaryo: Kullanıcıdan "Sepet Tutarı", "Üye misiniz? (e/h)" ve "Kupon Kodu (A, B veya X)" bilgilerini alın. Hesaplamayı şu sırayla yapın:
+Sepet tutarı 500 TL'den fazlaysa kargo ücreti 0 TL, değilse 30 TL ekleyin.
+Eğer kullanıcı üye ise (e), mevcut toplam tutar üzerinden %10 indirim yapın.
+switch ile kupon koduna bakın:
+'A' ise toplamdan 50 TL düşürün.
+'B' ise toplamdan %5 daha düşürün.
+'X' ise indirim yok.
+Sonuçta ödenecek nihai tutarı yazdırın.
+Girdi Örneği: Tutar: 600, Üye: e, Kupon: A
+Beklenen Çıktı Adımları:
+Tutar 600 (Kargo 0) -> Toplam: 600
+Üye indirimi (%10) -> 540
+Kupon A (-50 TL) -> 490
+Ödenecek Tutar: 490 TL
+Detaylı İpuçları:
+Bu sorunun anahtarı sıralamadır. İndirimleri sırasıyla aynı toplamTutar değişkeni üzerinde güncelleyerek (toplamTutar = toplamTutar * 0.90 gibi) ilerleyin.
+Soru 20: BOSS SEVİYESİ - Akıllı Ev Klima Kontrolü
+Senaryo: Kullanıcıdan "Mevcut Oda Sıcaklığı", "Hedef Sıcaklık", "Çalışma Modu (1: Soğut, 2: Isıt, 3: Kapat)" ve "Pencere Açık mı? (e/h)" bilgilerini alın.
+Kural 1: Eğer pencere açıksa ('e'), hiçbir işlem yapmadan "Lütfen önce pencereyi kapatın!" uyarısı verin ve programı bitirin.
+Kural 2: Pencere kapalıysa, switch ile modu kontrol edin:
+Case 1 (Soğut): Eğer mevcut sıcaklık, hedef sıcaklıktan büyükse "Soğutma başlatıldı.", değilse "Oda zaten istenen sıcaklıkta veya daha soğuk." yazın.
+Case 2 (Isıt): Eğer mevcut sıcaklık, hedef sıcaklıktan küçükse "Isıtma başlatıldı.", değilse "Oda zaten istenen sıcaklıkta veya daha sıcak." yazın.
+Case 3 (Kapat): "Klima sistemi kapatıldı." yazın.
+Default: "Geçersiz mod seçimi."
+Girdi Örneği: Mevcut: 28, Hedef: 22, Mod: 1, Pencere: h
+Beklenen Çıktı: Soğutma başlatıldı.
+Detaylı İpuçları:
+En dışta bir if-else ile pencere kontrolü yapın.
+else bloğunun (pencere kapalı durumu) içine switch yapısını yerleştirin.
+Her case bloğunun içine de gerekli sıcaklık karşılaştırmasını yapan if-else bloklarını yerleştirin. (3 katmanlı iç içe yapı: if -> switch -> if).

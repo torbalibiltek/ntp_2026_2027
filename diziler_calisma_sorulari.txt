@@ -1,0 +1,82 @@
+Konu özeti: Dizi, aynı türden birden fazla veriyi tek bir değişken adı altında saklamamızı sağlar. Dizinin
+elemanlarına indeks numarasıyla ulaşılır. İndeks 0&#39;dan başlar; eleman sayısı için Length özelliği kullanılır.
+Örnek: int[] sayilar = new int[5]; veya int[] sayilar = { 10, 20, 30 };
+Çalışma yönergesi: Soruları C# Console uygulamasında çözünüz. Gerekli yerlerde for döngüsünden, if-else
+yapısından ve sayaç değişkenlerinden yararlanınız.
+1. 1. Günlük Sıcaklıklar [Kolay]
+Bir haftanın her günü ölçülen sıcaklıkları bir tam sayı dizisinde tutunuz. Dizideki sıcaklıkları alt alta ekrana
+yazdırınız.
+İpucu: int[] dizi tanımlayın ve for döngüsüyle elemanları yazdırın.
+2. 2. Alışveriş Sepeti [Kolay]
+Bir müşterinin aldığı 5 ürünün fiyatını dizide saklayınız. Ürün fiyatlarını ekrana yazdırınız.
+İpucu: double türünde bir dizi kullanabilirsiniz.
+3. 3. Sınav Notları [Kolay]
+5 öğrencinin sınav notunu kullanıcıdan alıp bir diziye kaydediniz. Daha sonra bütün notları ekrana yazdırınız.
+İpucu: Önce diziyi oluşturun, sonra for döngüsü içinde Console.ReadLine() kullanın.
+4. 4. Sayıların Toplamı [Kolay]
+Kullanıcıdan 6 sayı alarak diziye kaydediniz. Dizideki sayıların toplamını bulunuz.
+İpucu: Toplam için başlangıçta 0 değerini kullanın.
+5. 5. Sınıf Not Ortalaması [Kolay]
+8 öğrencinin notunu dizide tutunuz. Notların aritmetik ortalamasını hesaplayıp ekrana yazdırınız.
+İpucu: Toplamı eleman sayısına bölün.
+Çözümünüz:
+........................................................................................................................
+........................................................................................................................
+6. 6. En Yüksek Sıcaklık [Kolay]
+Bir haftanın 7 günlük sıcaklık değerleri dizide verilmiştir. Haftanın en yüksek sıcaklığını bulunuz.
+İpucu: En büyük değeri ilk eleman kabul ederek başlayın.
+7. 7. En Düşük Ürün Fiyatı [Kolay-Orta]
+5 ürünün fiyatını kullanıcıdan alınız. Dizideki en düşük fiyatı ekrana yazdırınız.
+İpucu: En küçük değeri bulmak için karşılaştırma yapın.
+
+8. 8. Çift ve Tek Sayılar [Orta]
+Kullanıcıdan 10 tam sayı alınız. Dizide kaç tane çift, kaç tane tek sayı olduğunu bulunuz.
+İpucu: Sayının 2&#39;ye bölümünden kalanı kontrol edin.
+9. 9. Başarılı Öğrenci Sayısı [Orta]
+10 öğrencinin notunu dizide saklayınız. 50 ve üzeri not alan öğrenci sayısını bulunuz.
+İpucu: Koşul sağlandığında sayaç değişkenini artırın.
+10. 10. Belirli Bir Sayıyı Arama [Orta]
+Kullanıcıdan 8 sayı alınız. Ardından aranacak bir sayı isteyiniz. Bu sayının dizide bulunup bulunmadığını ekrana
+yazdırınız.
+İpucu: Bulundu bilgisini tutmak için bool değişken kullanabilirsiniz.
+Çözümünüz:
+........................................................................................................................
+........................................................................................................................
+11. 11. Ürün Stok Kontrolü [Orta]
+Bir mağazadaki 6 ürünün stok miktarını dizide tutunuz. Stok miktarı 5&#39;in altında olan ürünlerin sıra numarasını ve
+stok miktarını yazdırınız.
+İpucu: Her elemanın indeksini kontrol edin. Ekranda sıra numarası için indeks + 1 yazdırın.
+12. 12. Pozitif, Negatif ve Sıfır [Orta]
+Kullanıcıdan 10 tam sayı alınız. Dizide kaç pozitif, kaç negatif ve kaç sıfır bulunduğunu hesaplayınız.
+İpucu: if-else if-else yapısından yararlanın.
+13. 13. Notları Büyükten Küçüğe Sıralama [Orta-Zor]
+5 öğrencinin notunu kullanıcıdan alınız. Notları büyükten küçüğe sıralayıp ekrana yazdırınız.
+İpucu: İç içe for döngüsü ve yer değiştirme (swap) işlemi kullanın.
+14. 14. Diziyi Tersten Yazdırma [Orta]
+Kullanıcıdan 7 şehir adı alarak bir string dizisine kaydediniz. Şehirleri giriş sırasının tersinde ekrana yazdırınız.
+İpucu: Döngüyü dizinin son indeksinden başlatın.
+15. 15. İki Diziyi Birleştirme [Orta-Zor]
+5 elemanlı iki tam sayı dizisi oluşturunuz. İkinci dizinin elemanlarını birinci dizinin devamına aktararak 10
+elemanlı yeni bir dizi oluşturunuz.
+İpucu: Yeni dizinin ilk yarısına birinci, ikinci yarısına ikinci diziyi kopyalayın.
+Çözümünüz:
+........................................................................................................................
+........................................................................................................................
+16. 16. Tekrar Eden Sayıları Sayma [Orta]
+Kullanıcıdan 10 tam sayı alınız. Kullanıcının belirlediği bir sayının dizide kaç kez tekrar ettiğini bulunuz.
+İpucu: Her eşleşmede sayaç değişkenini artırın.
+17. 17. İkinci En Büyük Sayı [Zor]
+Birbirinden farklı 6 tam sayıdan oluşan dizinin en büyük ikinci elemanını bulunuz.
+İpucu: En büyük ve ikinci en büyük değerleri ayrı değişkenlerde takip edin.
+
+18. 18. Haftalık Harcama Analizi [Zor]
+7 günlük harcamayı dizide saklayınız. Toplam harcamayı, günlük ortalamayı ve ortalamanın üzerinde harcama
+yapılan gün sayısını hesaplayınız.
+İpucu: Önce toplam ve ortalamayı bulun, sonra diziyi yeniden dolaşın.
+19. 19. Sıralı Olup Olmadığını Kontrol Etme [Zor]
+Kullanıcıdan 6 tam sayı alınız. Dizinin küçükten büyüğe sıralı olup olmadığını kontrol ediniz.
+İpucu: Her elemanı kendisinden sonraki elemanla karşılaştırın.
+20. 20. Mini Sınav Analiz Programı [Zor]
+10 öğrencinin notunu dizide tutunuz. En yüksek notu, en düşük notu, sınıf ortalamasını, 50 ve üzeri alanların
+sayısını ve sınıf ortalamasının üzerinde not alanların sayısını ekrana yazdırınız.
+İpucu: Tek bir dizi üzerinde birkaç farklı sayaç

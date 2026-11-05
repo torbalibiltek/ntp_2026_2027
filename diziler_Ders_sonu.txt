@@ -1,0 +1,97 @@
+/*
+ * 5 öğrencinin sınav notunu kullanıcıdan alıp bir diziye kaydediniz. 
+ * Daha sonra bütün notları ekrana yazdırınız.
+ * İpucu: Önce diziyi oluşturun, sonra for döngüsü içinde Console.ReadLine() kullanın.
+*/
+/*Console.WriteLine("Öğrenci Sayısını Giriniz");
+int ogrenci_sayisi = int.Parse(Console.ReadLine());
+int[] notlar = new int[ogrenci_sayisi];//{5, 67,54,98,34 }
+int toplam = 0;
+for (int i = 0; i < notlar.Length; i++) //0,1,2,3,4
+{
+    Console.WriteLine($"{i + 1}. Puanı Giriniz : ");
+    int puan = Convert.ToInt16(Console.ReadLine());
+    notlar[i] = puan;
+    toplam += puan;
+}
+
+for (int i = 0; i < notlar.Length; i++) //0,1,2,3,4
+{
+    Console.WriteLine($"{i + 1}. Puanınız : {notlar[i]}");
+    
+}
+Console.WriteLine($"Girdiğiniz puanların toplamı {toplam}");
+Console.WriteLine($"Girilen Notların Ortalaması {toplam/ogrenci_sayisi}");
+*/
+// 6 adet metinsel ifadeyi diziye atayıp, ekranda gösteriniz.
+/*
+string[] isimler = new string[6] {"azad","mertAli","yaşar","hasan","yusuf","salih" };
+for(int i=0;i<isimler.Length;i++)
+{
+    Console.WriteLine(isimler[i]);
+}
+*/
+
+
+using System.Linq;
+/*
+int[] notlar = new int[] { 5, 67, 54, 98, 34 };
+
+Console.WriteLine($"notlar arasındaki en büyük not: {notlar.Max()}");
+Console.WriteLine($"notlar arasındaki en küçük not: {notlar.Min()}");
+
+double ortalama = notlar.Sum() / notlar.Length;
+Console.WriteLine($"notlar ortalaması: {ortalama}");
+
+int tek=0, cift = 0;
+for( int i = 0; i < notlar.Length; i++ )
+{
+    if( notlar[i] % 2 == 0 )
+        { cift++; }
+    else {  tek++; }
+}
+Console.WriteLine($"tek not sayısı: {tek}, cift not sayısı : {cift}");
+int basarili = 0;
+for (int i = 0; i < notlar.Length; i++)
+{
+    if (notlar[i] >= 50)
+        basarili++;
+}
+Console.WriteLine($"başarılı öğrenci sayısı : {basarili}");
+Console.WriteLine($"başarısız öğrenci sayısı : {notlar.Length - basarili}");
+
+Console.WriteLine("Hangi notu merak ediyorsun ?");
+int merak_edilen_puan = int.Parse(Console.ReadLine() );
+
+if (notlar.Contains(merak_edilen_puan))
+    Console.WriteLine("merak edilen puan bulunmakta");
+else
+    Console.WriteLine("aradığınız puan listede yok");
+
+*/
+
+
+Console.WriteLine("kaç kişilik sınıf");
+int ogrenci_sayisi = int.Parse(Console.ReadLine());
+
+int[] notlar = new int[ogrenci_sayisi];
+string[] ogrenci_adlari = new string[ogrenci_sayisi];
+
+
+for (int i = 0; i < ogrenci_sayisi; i++)
+{
+    Console.WriteLine($"{i+1}. öğrencinin önce adını sonra notunu giriniz: ");
+    string ad = Console.ReadLine();
+    int puan = int.Parse(Console.ReadLine());
+    ogrenci_adlari[i] = ad;
+    notlar[i] = puan;
+}
+
+for (int i = 0; i < ogrenci_sayisi; i++)
+{
+    if (notlar[i] < 50)
+    {
+        Console.WriteLine($"{i + 1}. adı {ogrenci_adlari[i]}, notu {notlar[i]} kaldı");
+        Console.WriteLine($"Geçmesi için {50 - notlar[i]} fazla alması gerekir");
+    }
+}

@@ -1,0 +1,66 @@
+Yönerge: Soruları sırasıyla çözünüz. Her soruda istenen metodu tanımlayınız ve Main metodu içinden çağırarak çalışmasını kontrol ediniz.
+Hatırlatma: Metot; belirli bir işi yapan, ihtiyaç duyulduğunda çağrılabilen kod bloğudur. Parametre alabilir ve geriye değer döndürebilir.
+1. EkranaYaz metodu   [Kolay]
+Parametre almayan ve geriye değer döndürmeyen EkranaYaz adlı bir metot oluşturun. Metot ekrana “Merhaba, C# dünyası!” yazdırsın. Main metodundan çağırın.
+Çözüm alanı: ______________________________________________________________
+2. İki sayıyı toplama   [Kolay]
+Topla adlı, iki tam sayı parametresi alan ve sonucu ekrana yazdıran bir metot yazın. Metodu Main içinde 8 ve 12 değerleriyle çağırın.
+Çözüm alanı: ______________________________________________________________
+3. Kişiyi selamlama   [Kolay]
+Selamla adlı, isim parametresi alan bir metot oluşturun. Metot “Merhaba [isim]” mesajını yazdırsın. Metodu kendi belirlediğiniz bir isimle çağırın.
+Çözüm alanı: ______________________________________________________________
+4. Karenin alanı   [Kolay]
+KareninAlani adlı, bir kenar uzunluğu alan ve karenin alanını geriye döndüren bir metot yazın. Dönen sonucu Main metodunda ekrana yazdırın.
+Çözüm alanı: ______________________________________________________________
+________________________________________________________________________
+5. Yaş kontrolü   [Kolay]
+YasDurumu adlı, yaş parametresi alan bir metot yazın. Yaş 18 veya daha büyükse “Reşit”, değilse “Reşit değil” yazdırsın.
+Çözüm alanı: ______________________________________________________________
+6. Tek mi çift mi?   [Kolay-Orta]
+TekMiCiftMi adlı, tam sayı parametresi alan bir metot oluşturun. Sayının tek mi çift mi olduğunu ekrana yazdırsın.
+Çözüm alanı: ______________________________________________________________
+7. En büyük sayı   [Kolay-Orta]
+BuyukOlaniBul adlı, iki tam sayı alan ve büyük olanı geriye döndüren bir metot yazın. Sayılar eşitse metot sayılardan birini döndürebilir. Sonucu Main içinde gösterin.
+Çözüm alanı: ______________________________________________________________
+8. Dikdörtgenin çevresi   [Kolay-Orta]
+DikdortgenCevresi adlı, kısa ve uzun kenar parametrelerini alan ve çevreyi geriye döndüren bir metot yazın. Sonucu ekrana yazdırın.
+Çözüm alanı: ______________________________________________________________
+________________________________________________________________________
+9. Not değerlendirme   [Orta]
+NotDurumu adlı, 0–100 arasında bir not alan metot yazın. 50 ve üzeri için “Geçti”, 50’nin altı için “Kaldı” sonucunu geriye döndürsün.
+Çözüm alanı: ______________________________________________________________
+10. Üç sayının ortalaması   [Orta]
+OrtalamaHesapla adlı, üç sayı parametresi alan ve aritmetik ortalamayı geriye döndüren bir metot yazın. Sonucu iki basamaklı gösterin.
+Çözüm alanı: ______________________________________________________________
+11. Sayıların toplamı   [Orta]
+Belirtilen bir pozitif tam sayıya kadar olan sayıların toplamını hesaplayan ToplamiHesapla adlı bir metot yazın. Örneğin 5 gönderildiğinde 1+2+3+4+5 sonucunu döndürsün.
+Çözüm alanı: ______________________________________________________________
+12. Çarpım tablosu   [Orta]
+CarpimTablosu adlı, bir sayı parametresi alan bir metot yazın. Bu sayının 1’den 10’a kadar çarpım sonuçlarını ekrana yazdırsın.
+Çözüm alanı: ______________________________________________________________
+________________________________________________________________________
+13. Parola kontrolü   [Orta]
+ParolaKontrol adlı, metin türünde parola alan bir metot yazın. Parola “12345” ise true, değilse false döndürsün. Main metodunda sonucu uygun bir mesajla gösterin.
+Çözüm alanı: ______________________________________________________________
+14. Daire alanı   [Orta]
+DaireAlani adlı, yarıçap parametresi alan ve dairenin alanını (π × r × r) geriye döndüren bir metot yazın. Pi için Math.PI kullanın.
+Çözüm alanı: ______________________________________________________________
+15. Asal sayı kontrolü   [Orta-Zor]
+AsalMi adlı, pozitif tam sayı alan ve sayının asal olup olmadığını bool olarak döndüren bir metot yazın. 1 asal kabul edilmemelidir.
+Çözüm alanı: ______________________________________________________________
+16. Ürün indirimi   [Orta-Zor]
+IndirimliFiyat adlı, ürünün fiyatını ve indirim yüzdesini alan, indirimli fiyatı geriye döndüren bir metot yazın. Örneğin 1000 TL ve %20 indirim için 800 sonucunu üretmelidir.
+Çözüm alanı: ______________________________________________________________
+________________________________________________________________________
+17. Metot aşırı yükleme   [Zor]
+AyniIslem adlı metodu iki farklı şekilde tanımlayın: İlk metot iki tam sayıyı toplasın, ikinci metot üç tam sayıyı toplasın. Main metodunda ikisini de çağırın.
+Çözüm alanı: ______________________________________________________________
+18. Sıcaklık dönüştürme   [Zor]
+CelciusToFahrenheit adlı, Celsius değeri alan ve Fahrenheit değerini (C × 9 / 5) + 32 formülüyle döndüren bir metot yazın. 25 °C için sonucu gösterin.
+Çözüm alanı: ______________________________________________________________
+19. ATM işlem menüsü   [Zor]
+MenuGoster adlı parametresiz bir metot oluşturun ve para çekme, para yatırma, bakiye görüntüleme seçeneklerini göstersin. Kullanıcıdan seçim alan Main metodunda seçime göre IslemYap adlı ayrı bir metodu çağırın. IslemYap metodu seçimi parametre olarak alsın ve uygun mesajı yazdırsın.
+Çözüm alanı: ______________________________________________________________
+20. Birden fazla metotla hesap makinesi   [Zor]
+Topla, Cikar, Carp ve Bol adlı dört ayrı metot yazın. Her biri iki double parametre alsın ve sonucu döndürsün. Main metodunda kullanıcıdan iki sayı ve işlem türü alın; uygun metodu çağırarak sonucu gösterin. Sıfıra bölme durumunu kontrol edin.
+Çözüm alanı: ______________________________________________________________
